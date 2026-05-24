@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHASKAR | EEE Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="#hero" class="logo">BHASKAR<span>//EEE</span></a>
+      <nav id="mainNav" class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Electronics & Electrical Engineering Student</p>
+          <h1>Hi, I'm <span>BHASKAR</span></h1>
+          <p>
+            I design intelligent circuits, embedded systems, and energy-efficient solutions
+            with an anime-inspired futuristic mindset.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card floating">
+          <h3>Current Focus</h3>
+          <ul>
+            <li>⚡ Power Electronics</li>
+            <li>🤖 Embedded AI Devices</li>
+            <li>🔋 Smart Energy Systems</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="glass-card">
+            <h3>Core Engineering</h3>
+            <p>Circuit Design, Power Systems, Control Theory, Signal Processing</p>
+          </article>
+          <article class="glass-card">
+            <h3>Tools & Tech</h3>
+            <p>MATLAB, LTspice, Arduino, ESP32, KiCad, AutoCAD Electrical</p>
+          </article>
+          <article class="glass-card">
+            <h3>Programming</h3>
+            <p>C/C++, Python, Embedded C, Verilog basics, IoT integration</p>
+          </article>
+          <article class="glass-card">
+            <h3>Soft Skills</h3>
+            <p>Team Leadership, Technical Documentation, Public Speaking</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Smart Home Energy Guardian</h3>
+            <p>
+              IoT-based real-time monitoring system for home energy usage with anomaly
+              detection and mobile alerts.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Autonomous Solar Tracking Unit</h3>
+            <p>
+              Dual-axis servo-controlled panel tracker that increased solar collection
+              efficiency through light-adaptive sensing.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Anime HUD Oscilloscope UI</h3>
+            <p>
+              Futuristic dashboard interface prototype for visualizing waveform dynamics in
+              educational labs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section reveal">
+        <h2>Resume</h2>
+        <div class="resume-panel glass-card">
+          <p>
+            Download my updated resume to explore internships, research involvement, and
+            project experience.
+          </p>
+          <a href="#" class="btn primary" aria-label="Download Resume">Download Resume PDF</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="glass-card">
+            <h3>Let's Build the Future</h3>
+            <p>Email: bhaskar.engineer@example.com</p>
+            <p>LinkedIn: linkedin.com/in/bhaskar-eee</p>
+            <p>Location: India (Open to remote collaboration)</p>
+          </div>
+          <form class="glass-card contact-form" onsubmit="event.preventDefault(); alert('Thanks! Your message has been queued in BHASKAR\'s command center.');">
+            <label>
+              Name
+              <input type="text" required placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" required placeholder="Tell me about your project..."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 BHASKAR | Engineered with passion and neon dreams.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
